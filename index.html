@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>L26_CRUD_Operation</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-4 offset-4 mt-3">
+            <div class="card">
+                <div class="card-body">
+                    <input type="text" class="form-control" id="product-name" placeholder="Product name">
+                    <input type="number" class="form-control mt-3" id="product-price" placeholder="Product price">
+                    <input type="date" class="form-control mt-3" id="product-date" placeholder="Expiration">
+                    <input type="color" class="form-control mt-3" id="product-color" placeholder="Product color">
+                </div>
+                <div class="card-footer d-flex justify-content-end">
+                    <button type="button" class="btn btn-success" onclick="addProduct()" id="addButton">Add product</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="content"></div>
+</div>
+
+<div class="toast" data-delay="3000">
+    <div class="toast-header">
+        <h3 class="text-danger">Xatolik!</h3>
+    </div>
+    <div class="toast-body">
+        Ma'lumotlar to'liq to'ldirilmagan!
+    </div>
+</div>
+
+
+
+
+
+
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
